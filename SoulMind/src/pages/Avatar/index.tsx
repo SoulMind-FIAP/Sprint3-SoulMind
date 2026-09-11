@@ -182,7 +182,7 @@ export default function Avatar() {
             </p>
           </div>
           <div className="grid gap-8 lg:grid-cols-[280px_1fr]">
-            <div className="rounded-2xl border border-border bg-background p-5">
+            <div className=" h-128 rounded-2xl border border-border bg-background p-5">
               <div className="mb-4 flex items-center justify-between">
                 <p className="text-sm font-bold">
                   Seu avatar
