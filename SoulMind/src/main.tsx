@@ -11,7 +11,6 @@ import Error from './pages/Error/index.tsx';
 import Faq from './pages/Faq/index.tsx';
 import Home from './pages/Home/index.tsx';
 import Missoes from './pages/Missoes/index.tsx';
-import DetalhesMissao from "./pages/DetalhesMissao/index.tsx";
 import Personalizar from './pages/Personalizar/index.tsx';
 import Progresso from './pages/Progresso/index.tsx';
 import QuemSomos from './pages/QuemSomos/index.tsx';
@@ -27,7 +26,6 @@ const router = createBrowserRouter([
       { path: "/contato", element: <Contato /> },
       { path: "/faq", element: <Faq /> },
       { path: "/missoes", element: <Missoes /> },
-      { path: "/missoes/:id", element: <DetalhesMissao /> },
       { path: "/personalizar", element: <Personalizar /> },
       { path: "/progresso", element: <Progresso /> },
       { path: "/quem-somos", element: <QuemSomos /> },
