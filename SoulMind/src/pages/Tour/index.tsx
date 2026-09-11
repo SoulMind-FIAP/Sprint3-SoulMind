@@ -235,7 +235,6 @@ export default function Tour({ onFinish }: { onFinish?: () => void }) {
           </div>
         </div>
       )}
-
       {phase === "done" && (
         <div className="relative flex flex-1 flex-col items-center justify-center px-6 py-10 text-center">
           
