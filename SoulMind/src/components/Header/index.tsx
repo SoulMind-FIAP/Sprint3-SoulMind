@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const linksPrincipais = [
   { label: "HOME", path: "/" },
   { label: "AVATAR", path: "/avatar" },
-  { label: "MISSÕES", path: "/progresso" },
+  { label: "MISSÕES", path: "/missoes" },
   { label: "QUEM SOMOS", path: "/quem-somos" },
   { label: "SOBRE", path: "/sobre" },
   { label: "FAQ", path: "/faq" },

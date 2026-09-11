@@ -1,4 +1,5 @@
 export type TipoMissao = {
+  foto: string;
   id: number;
   titulo: string;
   descricao: string;
