@@ -1,1 +1,17 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+    --color-background: #F4F3FE;
+    --color-background-secondary: #fcfcfc;
+    --color-primary: #5260FF;
+    --color-primary-hover: rgb(202, 207, 246);
+    --color-text: #161929;
+    --color-card: #FFFFFF;
+    --color-primary-foreground: #FCFBFF;
+    --color-border: #DDDCEB;
+}
+
+body {
+    @apply bg-background text-text ;
+}
