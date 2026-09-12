@@ -182,7 +182,7 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 
 ### Henrique Tavares Coutinho
 
-<img src ="././SoulMind/src/assets/henrique.jpeg" width=50px height=50px>
+<img src ="././SoulMind/src/assets/henrique.jpeg" width=100px height=100px>
 
 - **RM:** 569336
 - **Turma:** TDSPW
@@ -191,7 +191,7 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 
 ### Melissa Fiuza da Silva
 
-<img src ="././SoulMind/src/assets/melissa.jpeg" width=50px height=50px>
+<img src ="././SoulMind/src/assets/melissa.jpeg" width=100px height=100px>
 
 - **RM:** 573695
 - **Turma:** TDSPO
@@ -200,7 +200,7 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 
 ### Pedro Nunes Ferreira
 
-<img src ="././SoulMind/src/assets/pedro.png" width=50px height=50px>
+<img src ="././SoulMind/src/assets/pedro.png" width=100px height=100px>
 
 - **RM:** 573066
 - **Turma:** TDSPW
