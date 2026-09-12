@@ -173,7 +173,7 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 ## Integrantes do Grupo
 
 ### Ludmylla Nogueira
-<img src ="././SoulMind/src/assets/lud.jpeg" width=50px height=50px>
+<img src ="././SoulMind/src/assets/lud.jpeg" width=100px height=100px>
 
 - **RM:** 572999
 - **Turma:** TDSPW
