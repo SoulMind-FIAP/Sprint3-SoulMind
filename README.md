@@ -1,5 +1,7 @@
 # SoulMind 🌱
 
+![Banner SoulMind](./SoulMind/src/assets/banner.png)
+
 ## Descrição do Projeto
 
 O **SoulMind** é o chatbot de uma solução desenvolvida para a **SoulUp**, com o objetivo de aumentar o engajamento das pessoas com a sustentabilidade através da gamificação.
@@ -51,6 +53,7 @@ SoulMind/
 │   ├── avatar_11.png
 │   ├── avatar_12.png
 │   ├── avatar-soul.png
+│   ├── banner.png
 │   ├── comunidade.png
 │   ├── henrique.jpeg
 │   ├── home.png
@@ -172,12 +175,16 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 
 ### Ludmylla Nogueira
 
+![](./SoulMind/src/assets/lud.jpeg)
+
 - **RM:** 572999
 - **Turma:** TDSPW
 - **LinkedIn:** https://www.linkedin.com/in/ludmylla-nogueira-11991927a
 - **GitHub:** https://github.com/Ludmylla1905
 
 ### Henrique Tavares Coutinho
+
+![](./SoulMind/src/assets/henrique.jpeg)
 
 - **RM:** 569336
 - **Turma:** TDSPW
@@ -186,6 +193,8 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 
 ### Melissa Fiuza da Silva
 
+![](./SoulMind/src/assets/melissa.jpeg)
+
 - **RM:** 573695
 - **Turma:** TDSPO
 - **LinkedIn:** https://www.linkedin.com/in/melissa-fiuza
@@ -193,18 +202,14 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 
 ### Pedro Nunes Ferreira
 
+![](./SoulMind/src/assets/pedro.png)
+
 - **RM:** 573066
 - **Turma:** TDSPW
 - **LinkedIn:** https://www.linkedin.com/in/pedro-nunes-1089133b4
 - **GitHub:** https://github.com/Pedronuf
 
 ---
-
-## Status do Projeto
-
-🚧 **Em desenvolvimento — Sprint 3**
-
-Projeto desenvolvido para a disciplina de Front-end da **FIAP**.
 
 ## Contato
 
