@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {FaStar,FaBullseye,FaTrophy,FaSeedling,FaTint,FaRecycle,FaChartLine,FaLock,FaCheck,FaUndo,FaHeart,} from "react-icons/fa";
+import {FaStar,FaSeedling,FaTint,FaRecycle,FaChartLine,FaLock,FaCheck,FaUndo,FaHeart,} from "react-icons/fa";
 import {avatares,niveis} from "../../data/DadosAvatar";
 
 export default function Avatar() {
@@ -29,53 +29,7 @@ export default function Avatar() {
     circunferencia * (1 - progressoGeral / 100);
   return (
     <div className=" mt-8 min-h-screen bg-background w-9/10 m-auto">
-        <section className="  grid gap-5 sm:grid-cols-3">
-          <div className="rounded-3xl bg-card p-6 shadow-soft">
-            <div className="flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
-                <FaStar className="h-6 w-6 fill-primary text-primary" />
-              </div>
-              <div>
-                <p className="text-3xl font-bold text-primary">
-                  {pontosUsuario}
-                </p>
-                <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                  Pontos
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-3xl bg-card p-6 shadow-soft">
-            <div className="flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
-                <FaBullseye className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <p className="text-3xl font-bold text-primary">
-                  24
-                </p>
-                <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                  Missões
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-3xl bg-card p-6 shadow-soft">
-            <div className="flex items-center gap-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
-                <FaTrophy className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <p className="text-3xl font-bold text-primary">
-                  8
-                </p>
-                <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                  Conquistas
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        
         <section className="mt-5 grid gap-5 lg:grid-cols-2">
           <div className="rounded-3xl bg-card p-6 shadow-soft sm:p-8">
             <div className="flex flex-col items-center gap-6 sm:flex-row">

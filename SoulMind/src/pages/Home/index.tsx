@@ -152,9 +152,7 @@ export default function Home() {
                 Compartilhar
               </span>
             </div>
-          </div>
-
-          
+          </div>      
         </div>
       </section>
     </div>

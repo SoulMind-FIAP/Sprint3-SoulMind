@@ -40,6 +40,7 @@ SoulMind/
 │   │
 │   ├── assets/
 │   ├── agua.png
+│   ├── assistnte.png
 │   ├── avatar_01.png
 │   ├── avatar_02.png
 │   ├── avatar_03.png
@@ -52,6 +53,7 @@ SoulMind/
 │   ├── avatar_10.png
 │   ├── avatar_11.png
 │   ├── avatar_12.png
+│   ├── avatar.png
 │   ├── avatar-soul.png
 │   ├── banner.png
 │   ├── comunidade.png
@@ -61,6 +63,7 @@ SoulMind/
 │   ├── lud.jpeg
 │   ├── luz.png
 │   ├── melissa.jpeg
+│   ├── missoes.png
 │   ├── pedro.png
 │   ├── reciclagem.png
 │   ├── robo-erro.png
@@ -91,10 +94,6 @@ SoulMind/
 │   │   ├── home/
 │   │   │   └── index.tsx/
 │   │   ├── missoes/
-│   │   │   └── index.tsx/
-│   │   ├── personalizar/
-│   │   │   └── index.tsx/
-│   │   ├── progresso/
 │   │   │   └── index.tsx/
 │   │   ├── quem-somos/
 │   │   │   └── index.tsx/
@@ -174,8 +173,7 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 ## Integrantes do Grupo
 
 ### Ludmylla Nogueira
-
-![](./SoulMind/src/assets/lud.jpeg)
+<img src ="././SoulMind/src/assets/lud.jpeg" width=50px height=50px>
 
 - **RM:** 572999
 - **Turma:** TDSPW
@@ -184,7 +182,7 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 
 ### Henrique Tavares Coutinho
 
-![](./SoulMind/src/assets/henrique.jpeg)
+<img src ="././SoulMind/src/assets/henrique.jpeg" width=50px height=50px>
 
 - **RM:** 569336
 - **Turma:** TDSPW
@@ -193,7 +191,7 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 
 ### Melissa Fiuza da Silva
 
-![](./SoulMind/src/assets/melissa.jpeg)
+<img src ="././SoulMind/src/assets/melissa.jpeg" width=50px height=50px>
 
 - **RM:** 573695
 - **Turma:** TDSPO
@@ -202,7 +200,7 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 
 ### Pedro Nunes Ferreira
 
-![](./SoulMind/src/assets/pedro.png)
+<img src ="././SoulMind/src/assets/pedro.png" width=50px height=50px>
 
 - **RM:** 573066
 - **Turma:** TDSPW

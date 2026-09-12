@@ -5,12 +5,17 @@ import {
 } from "react-icons/fa";
 import avatarImg from "../../assets/avatar-soul.png";
 import { useNavigate } from "react-router-dom";
+import imgHome  from "../../assets/home.png";
+import imgMissoes  from "../../assets/missoes.png";
+import imgAvatar  from "../../assets/avatar.png";
+import imgAssistente  from "../../assets/assistente.png";
 
 type Phase = "welcome" | number | "done";
 
 const tourSteps = [
   {
     title: "Home",
+    foto: imgHome,
     message: "Aqui é o seu ponto de partida!",
     description:
       "Você pode acompanhar seu progresso, encontrar suas missões e acessar as principais funções da plataforma.",
@@ -18,30 +23,30 @@ const tourSteps = [
   {
     
     title: "Missões",
+    foto: imgMissoes,
     message: "Nas missões você encontra desafios sustentáveis para o seu dia a dia.",
     description: "Complete as atividades e conquiste recompensas!",
   },
+  
   {
 
-    title: "Pontos e conquistas",
-    message: "Cada missão concluída ajuda você a evoluir!",
-    description: "Aqui você acompanha seus pontos, moedas e conquistas.",
-  },
-  {
-
-    title: "Personalização do avatar",
+    title: "Avatar",
+    foto: imgAvatar,
     message: "Agora você pode deixar seu avatar com a sua cara!",
     description: "Use suas recompensas para desbloquear novos itens.",
   },
   {
  
     title: "Assistente Soul",
+    foto: imgAssistente,
     message: "E se você ficar perdido ou tiver alguma dúvida, pode falar comigo.",
     description: "Estou aqui para ajudar você durante sua jornada!",
   },
 ];
 
-function LaptopMockup() {
+function LaptopMockup({ phase }: { phase: number }) {
+
+   
   return (
     <div className="relative mx-auto w-full max-w-md">
       <div className="rounded-t-xl border-8 border-b-0 border-slate-800 bg-slate-800">
@@ -53,7 +58,11 @@ function LaptopMockup() {
             <span className="text-sm font-semibold text-foreground/70">Tela de Exemplo</span>
           </div>
 
-          
+          <img
+            src={tourSteps[phase].foto}
+            alt="Exemplo de tela"
+            className="absolute inset-0 h-full w-full object-cover"
+            />
         </div>
       </div>
       <div className="mx-auto h-3 w-[110%] max-w-none -translate-x-5/100 rounded-b-xl bg-slate-700" />
@@ -90,6 +99,7 @@ export default function Tour({ onFinish }: { onFinish?: () => void }) {
   };
 
   const goNext = () => {
+    
     if (phase === "welcome") return setPhase(0);
     if (typeof phase === "number") {
       if (phase < tourSteps.length - 1) setPhase(phase + 1);
@@ -180,7 +190,7 @@ export default function Tour({ onFinish }: { onFinish?: () => void }) {
           </div>
 
           <div className="mx-auto grid w-full max-w-5xl flex-1 items-center gap-10 py-8 lg:grid-cols-[1.2fr_1fr]">
-            <LaptopMockup/>
+            <LaptopMockup phase={phase} />
 
             <div className="mx-auto flex w-full max-w-sm flex-col items-center text-center lg:items-start lg:text-left">
               <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-primary/90 shadow-glow-primary">

@@ -2,12 +2,7 @@ import { Link} from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import roboErro from "../../assets/robo-erro.png";
 
-export default function PaginaNaoEncontrada() {
-
-  
-
-
-
+export default function Error() {
   return (
     <section className="mx-auto flex min-h-[70vh] w-full max-w-2xl flex-col items-center justify-center px-4 py-16 text-center sm:px-6">
       <div className="flex h-32 w-32 items-center justify-center rounded-full bg-primary/90 shadow-glow-primary sm:h-40 sm:w-40">
@@ -30,12 +25,10 @@ export default function PaginaNaoEncontrada() {
 
       <Link
         to="/"
-        className="mt-8 inline-flex items-center justify-center gap-1.5 rounded-xl bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:-translate-y-0.5 sm:text-base"
-      >
+        className="mt-8 inline-flex items-center justify-center gap-1.5 rounded-xl bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:-translate-y-0.5 sm:text-base">
         <FaHome className="h-4 w-4" />
         Voltar para a Home
       </Link>
-
 
     </section>
   );
