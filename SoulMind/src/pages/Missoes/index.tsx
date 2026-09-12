@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaRecycle, FaBicycle, FaBolt, FaCheck } from "react-icons/fa";
-  import {FaDroplet} from "react-icons/fa6";
+import {FaRecycle,FaBicycle,FaBolt,FaCheck,FaTrophy,FaCheckCircle,} from "react-icons/fa";
+import { FaDroplet } from "react-icons/fa6";
 import { missoes } from "../../data/DadosMissao";
 import reciclagemImg from "../../assets/reciclagem.png";
 import aguaImg from "../../assets/agua.png";
@@ -39,6 +39,8 @@ const icones = {
   },
 };
 
+const XP_POR_NIVEL = 50;
+
 export default function Missoes() {
   const navigate = useNavigate();
 
@@ -64,6 +66,10 @@ export default function Missoes() {
     totalMissoes > 0
       ? (quantidadeConcluidas / totalMissoes) * 100
       : 0;
+  const nivelAtual = Math.floor(xpGanho / XP_POR_NIVEL) + 1;
+  const xpNoNivelAtual = xpGanho % XP_POR_NIVEL;
+  const progressoNivel = (xpNoNivelAtual / XP_POR_NIVEL) * 100;
+  const xpFaltaProximoNivel = XP_POR_NIVEL - xpNoNivelAtual;
 
   return (
     <div>
@@ -77,30 +83,67 @@ export default function Missoes() {
           Complete os desafios e cuide do planeta!
         </p>
 
-        <div className="mt-8 rounded-2xl bg-card p-6 shadow-soft sm:mt-10 sm:p-8">
+        <div className="mt-8 overflow-hidden rounded-2xl bg-card shadow-soft sm:mt-10">
+          <div className="grid gap-6 p-6 sm:p-8 md:grid-cols-[1fr_auto] md:items-center md:gap-10">
+            <div>
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <p className="text-sm font-bold sm:text-base">Progresso semanal</p>
+                <p className="text-sm font-bold text-primary sm:text-base">
+                  {Math.round(porcentagem)}%
+                </p>
+              </div>
 
-          <div className="flex flex-wrap items-center justify-between gap-2">
+              <div className="mt-3 h-3 w-full overflow-hidden rounded-full bg-primary/10">
+                <div
+                  className="h-full rounded-full bg-primary transition-all duration-500"
+                  style={{ width: `${porcentagem}%` }}
+                />
+              </div>
 
-            <p className="text-sm font-bold sm:text-base">
-              Progresso semanal
-            </p>
+              <div className="mt-5 grid grid-cols-2 gap-3">
+                <div className="rounded-xl bg-primary/5 px-4 py-3 text-center">
+                  <p className="text-xl font-extrabold text-primary sm:text-2xl">
+                    {quantidadeConcluidas}
+                    <span className="text-sm font-semibold text-muted-foreground">/{totalMissoes}</span>
+                  </p>
+                  <p className="mt-0.5 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground sm:text-xs">
+                    Missões concluídas
+                  </p>
+                </div>
 
-            <p className="text-sm font-bold text-primary sm:text-base">
-              {quantidadeConcluidas} de {totalMissoes} concluídas · {xpGanho} XP
-            </p>
+                <div className="rounded-xl bg-emerald-50 px-4 py-3 text-center">
+                  <p className="text-xl font-extrabold text-emerald-600 sm:text-2xl">
+                    {xpGanho}
+                  </p>
+                  <p className="mt-0.5 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground sm:text-xs">
+                    XP conquistado
+                  </p>
+                </div>
+              </div>
+            </div>
 
+            <div className="flex flex-col items-center gap-2 rounded-2xl bg-primary/5 px-6 py-5 md:w-52">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-white shadow-soft">
+                <FaTrophy className="h-6 w-6" />
+              </div>
+              <p className="text-sm font-bold">Nível {nivelAtual}</p>
+
+              <div className="w-full">
+                <div className="h-2 w-full overflow-hidden rounded-full bg-primary/10">
+                  <div
+                    className="h-full rounded-full bg-primary transition-all duration-500"
+                    style={{ width: `${progressoNivel}%` }}
+                  />
+                </div>
+                <p className="mt-1.5 text-center text-[11px] text-muted-foreground">
+                  Faltam <span className="font-bold text-primary">{xpFaltaProximoNivel} XP</span> pro próximo nível
+                </p>
+              </div>
+            </div>
           </div>
-
-          <div className="mt-4 h-3 w-full overflow-hidden rounded-full bg-primary/10">
-            <div
-              className="h-full rounded-full bg-primary transition-all duration-300"
-              style={{ width: `${porcentagem}%` }}
-            />
-          </div>
-
         </div>
 
-        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-6 sm:mt-10 sm:grid-cols-2 lg:grid-cols-4">
 
           {missoes.map((missao) => {
             const { Icon, foto, cor, tag, nome } = icones[missao.icone];
@@ -109,15 +152,32 @@ export default function Missoes() {
             return (
               <div
                 key={missao.id}
-                className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-soft"
+                className={`group flex flex-col overflow-hidden rounded-2xl border bg-card shadow-soft transition-all duration-200 hover:-translate-y-1 hover:shadow-lg ${
+                  concluida ? "border-emerald-300" : "border-border"
+                }`}
               >
                 <div className="relative h-28">
-                  <img src={foto} alt={nome} className="h-full w-full object-cover" />
+                  <img
+                    src={foto}
+                    alt={nome}
+                    className={`h-full w-full object-cover transition-transform duration-300 group-hover:scale-105 ${
+                      concluida ? "opacity-70" : ""
+                    }`}
+                  />
                   <span
                     className={`absolute left-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-card shadow-soft ${cor}`}
                   >
                     <Icon className="h-4 w-4" />
                   </span>
+
+                  {concluida && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-emerald-600/40">
+                      <span className="flex items-center gap-1.5 rounded-full bg-emerald-500 px-3 py-1 text-xs font-bold text-white shadow-soft">
+                        <FaCheckCircle className="h-3.5 w-3.5" />
+                        Concluída
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 <div className="flex flex-1 flex-col p-4 sm:p-5">
