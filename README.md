@@ -1,5 +1,7 @@
 # SoulMind 🌱
 
+![Banner SoulMind](./SoulMind/src/assets/banner.png)
+
 ## Descrição do Projeto
 
 O **SoulMind** é o chatbot de uma solução desenvolvida para a **SoulUp**, com o objetivo de aumentar o engajamento das pessoas com a sustentabilidade através da gamificação.
@@ -38,6 +40,7 @@ SoulMind/
 │   │
 │   ├── assets/
 │   ├── agua.png
+│   ├── assistnte.png
 │   ├── avatar_01.png
 │   ├── avatar_02.png
 │   ├── avatar_03.png
@@ -50,7 +53,9 @@ SoulMind/
 │   ├── avatar_10.png
 │   ├── avatar_11.png
 │   ├── avatar_12.png
+│   ├── avatar.png
 │   ├── avatar-soul.png
+│   ├── banner.png
 │   ├── comunidade.png
 │   ├── henrique.jpeg
 │   ├── home.png
@@ -58,6 +63,7 @@ SoulMind/
 │   ├── lud.jpeg
 │   ├── luz.png
 │   ├── melissa.jpeg
+│   ├── missoes.png
 │   ├── pedro.png
 │   ├── reciclagem.png
 │   ├── robo-erro.png
@@ -88,10 +94,6 @@ SoulMind/
 │   │   ├── home/
 │   │   │   └── index.tsx/
 │   │   ├── missoes/
-│   │   │   └── index.tsx/
-│   │   ├── personalizar/
-│   │   │   └── index.tsx/
-│   │   ├── progresso/
 │   │   │   └── index.tsx/
 │   │   ├── quem-somos/
 │   │   │   └── index.tsx/
@@ -171,6 +173,7 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 ## Integrantes do Grupo
 
 ### Ludmylla Nogueira
+<img src ="././SoulMind/src/assets/lud.jpeg" width=100px height=100px>
 
 - **RM:** 572999
 - **Turma:** TDSPW
@@ -179,12 +182,16 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 
 ### Henrique Tavares Coutinho
 
+<img src ="././SoulMind/src/assets/henrique.jpeg" width=100px height=100px>
+
 - **RM:** 569336
 - **Turma:** TDSPW
 - **LinkedIn:** https://www.linkedin.com/in/henrique-tavares-coutinho-81a512356
 - **GitHub:** https://github.com/eneiqmaneiro
 
 ### Melissa Fiuza da Silva
+
+<img src ="././SoulMind/src/assets/melissa.jpeg" width=100px height=100px>
 
 - **RM:** 573695
 - **Turma:** TDSPO
@@ -193,18 +200,14 @@ https://github.com/SoulMind-FIAP/Sprint3-SoulMind.git
 
 ### Pedro Nunes Ferreira
 
+<img src ="././SoulMind/src/assets/pedro.png" width=100px height=100px>
+
 - **RM:** 573066
 - **Turma:** TDSPW
 - **LinkedIn:** https://www.linkedin.com/in/pedro-nunes-1089133b4
 - **GitHub:** https://github.com/Pedronuf
 
 ---
-
-## Status do Projeto
-
-🚧 **Em desenvolvimento — Sprint 3**
-
-Projeto desenvolvido para a disciplina de Front-end da **FIAP**.
 
 ## Contato
 

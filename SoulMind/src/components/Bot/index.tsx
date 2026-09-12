@@ -27,10 +27,17 @@ export default function Bot() {
           </div>
 
           <p className="mt-5 text-sm text-muted-foreground sm:text-base">
-            Olá, Melissa!  Precisa de ajuda em alguma missão ou dúvidas?
+            Olá!  Precisa de ajuda em alguma missão ou dúvidas?
           </p>
 
           <div className="mt-5 flex flex-col gap-3">
+            <Link
+              to="/tour"
+              onClick={() => setAberto(false)}
+              className="rounded-xl border border-primary/30 px-5 py-3 text-center text-sm font-semibold text-primary transition-colors hover:bg-primary/10"
+            >
+              Fazer tour guiado
+            </Link>
             <Link
               to="/missoes"
               onClick={() => setAberto(false)}
@@ -61,13 +68,8 @@ export default function Bot() {
         onClick={() => setAberto((v) => !v)}
         aria-label={aberto ? "Fechar Soul Bot" : "Abrir Soul Bot"}
         aria-expanded={aberto}
-        className="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-glow-primary transition-transform hover:-translate-y-0.5 sm:h-20 sm:w-20"
-      >
-        {aberto ? (
-          <FaX className="h-7 w-7 text-primary-foreground" />
-        ) : (
-          <img src={avatarImg} alt="" aria-hidden className="h-4/5 w-4/5 animate-float object-contain" />
-        )}
+        className="flex h-16 w-16 items-center justify-center rounded-full bg-primary shadow-glow-primary transition-transform hover:-translate-y-0.5 sm:h-20 sm:w-20">
+          <img src={avatarImg} alt="" aria-hidden className="h-4/5 w-4/5 animate-float object-contain" />   
       </button>
     </div>
   );

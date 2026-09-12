@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <h4 className="text-xs font-bold uppercase tracking-wide text-muted-foreground">Navegação</h4>
             <ul className="mt-4 space-y-2 text-sm">
-              {["Avatar", "Missões", "Progresso", "Personalizar"].map((item) => (
+              {["Avatar", "Missões"].map((item) => (
                 <li key={item}>
                   <Link to={item === "Avatar" ? "/avatar" : item === "Missões" ? "/missoes" : item === "Progresso" ? "/progresso" : "/personalizar"} className="text-foreground/80 hover:text-primary">
                     {item}
