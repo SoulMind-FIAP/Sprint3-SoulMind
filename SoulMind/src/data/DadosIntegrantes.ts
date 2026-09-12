@@ -17,7 +17,7 @@ export const DadosIntegrantes: TipoIntegrantes[] = [
         id: 2,
         nome: "Ludmylla Lins Nogueira",
         rm: "RM 572999",
-        turma: "1TDS...",
+        turma: "1TDSPW",
         foto: Ludmylla,
         github: "https://github.com/Ludmylla1905",
         linkedin: "https://linkedin.com/in/ludmylla-nogueira-11991927a/"
@@ -26,7 +26,7 @@ export const DadosIntegrantes: TipoIntegrantes[] = [
     {id: 3,
         nome: "Henrique Tavares",
         rm: "RM 569336",
-        turma: "1TDS...",
+        turma: "1TDSPW",
         foto: Henrique,
         github: "https://github.com/eneiqmaneiro",
         linkedin: "https://linkedin.com/in/henrique-tavares-coutinho-81a512356/"},
@@ -34,7 +34,7 @@ export const DadosIntegrantes: TipoIntegrantes[] = [
         {id: 4,
         nome: "Pedro Nunes",
         rm: "RM 573066",
-        turma: "1TDS...",
+        turma: "1TDSPW",
         foto: Pedro,
         github: "https://github.com/PedroNuf",
         linkedin: "https://linkedin.com/in/pedro-nunes-1089133b4/"}
