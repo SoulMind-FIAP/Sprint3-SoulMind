@@ -108,7 +108,6 @@ SoulMind/
 │   │   └── TipoMissao.ts
 │
 ├── .gitignore
-├── index.html
 ├── oxlintrc.json
 ├── index.html
 ├── package-lock.json
